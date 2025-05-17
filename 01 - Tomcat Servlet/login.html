@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        .error { color: #ff4d4d; } 
+        
+        body {
+            background-color: lightblue; /* changed from #1c1c3c */
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            color: black; /* default text color */
+        }
+        h1 {
+            color: black; /* changed from #ffcc00 */
+            font-size: 34px;
+        }
+        p {
+            color: black; /* changed from #ecf0f1 */
+            font-size: 18px;
+        }
+        
+        input {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 2px solid #ffcc00;
+            padding: 10px 12px;
+            font-size: 16px;
+            background-color: #ffffff; /* white box */
+            color: #000000; /* black text */
+        }
+        input:focus {
+            outline: none;
+            border-color: #f39c12;
+        }
+        
+        button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #ffcc00;
+            border: none;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: #f39c12;
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey USER! LOGIN TO PROCEED</h1>
+    <form action="servlet" method="post">
+        <p>Username: <input type="text" name="user" required><br></p>
+        <p>Password: <input type="password" name="pwd" required><br></p>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
